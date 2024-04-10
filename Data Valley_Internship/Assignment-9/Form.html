@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up Form</title>
+</head>
+<body>
+  <form action="/signup" method="post">
+    <h2>Sign Up</h2>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Full name"required><br><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="gmail id" required><br><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" placeholder="8 characters"required><br><br>
+    <label for="confirm_password">Confirm Password:</label><br>
+    <input type="password" id="confirm_password" name="confirm_password" placeholder="8 charactes"required><br><br>
+    <label for="date_of_birth">Date Of Birth:</label><br>
+    <input type="date" id="date_of_birth" name="date_of_birth" required><br><br>
+    <label for="gender">Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label><br><br>
+    <label for="photo">Insert your photo:</label><br>
+    <input type="file" id="photo" name="photo"><br><br>
+    <label for="resume">Insert your resume:</label><br>
+    <input type="file" id="resume" name="resume"><br><br>
+    <label for="security_question">Security Question:</label><br>
+    <select id="security_question" name="security_question">
+      <option value="">Select</option>
+      <option value="question1">pet name</option>
+      <option value="question2">fvrt food</option>
+      <option value="question3">fvrt bird</option>
+    </select><br><br>
+    <input type="checkbox" id="terms" name="terms" required>
+    <label for="terms">I agree terms and conditions</label><br><br>
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>
